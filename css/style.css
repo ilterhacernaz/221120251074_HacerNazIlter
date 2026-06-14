@@ -1,0 +1,69 @@
+/* Sayfa genelindeki gereksiz boşlukları sıfırlayalım */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Sayfanın en üstünde hocanın istediği kırmızı sabit bant ayarları */
+.ust-uyari-bandi {
+    position: fixed;   /* Sayfa aşağı kaysa bile yukarıda sabit kalır */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;      /* 20px Yükseklik */
+    background-color: red; /* Kırmızı arka plan */
+    color: white;      /* Beyaz yazı rengi */
+    font-size: 11px;
+    text-align: center;
+    line-height: 20px; /* Yazıyı dikeyde ortalar */
+    z-index: 9999;     /* Her şeyin en üstünde görünmesi için */
+}
+
+/* Menü ve logo alanının üstteki kırmızı banta yapışmaması için boşluk bırakıyoruz */
+header {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero (Giriş) alanı tasarımı - Polisan Mavisi tonu */
+.hero {
+    background-color: #0055a5; 
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Ana içerik alanı */
+main {
+    padding: 40px 20px;
+}
+
+/* Sayfa altı alanı */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
