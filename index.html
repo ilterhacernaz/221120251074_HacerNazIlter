@@ -1,22 +1,31 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polisan Holding - Ana Sayfa</title>
-    <!-- CSS dosyamızı buraya bağlıyoruz -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- 1. ZORUNLU ÜST UYARI ALANI (Kırmızı Bant) -->
     <div class="ust-uyari-bandi">
-        Bu site Web Tasarım dersi kapsamında yapılmıştır ve sitedeki bilgilerin geçerliliği yoktur.
+        Bu site Web Tasarımı dersi kapsamında yapılmıştır ve sitedeki her şey kurgusaldır.
     </div>
 
-    <!-- 2. HEADER / MENÜ ALANI -->
     <header>
-        <div class="logo">Polisan Holding</div>
+        <div class="logo">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 110" style="height: 42px; width: auto; display: block;">
+                    <path d="M19.1 12h27.4c15.1 0 24.3 8.3 24.3 22.1 0 14-9.2 22.3-24.3 22.3H33.2v31.3H19.1V12zm27 31.2c7.1 0 10.7-3.6 10.7-9.1 0-5.4-3.6-9.1-10.7-9.1H33.2v18.2h12.9z" fill="#004b93"/>
+                    <path d="M74.3 51c0-23.4 16.5-39.9 40.2-39.9s40.1 16.5 40.1 39.9c0 23.4-16.4 40.1-40.1 40.1S74.3 74.4 74.3 51zm66.1 0c0-15.6-10.2-26.6-25.9-26.6-15.8 0-25.9 11-25.9 26.6 0 15.6 10.1 26.7 25.9 26.7 15.7 0 25.9-11.1 25.9-26.7z" fill="#e60012"/>
+                    <path d="M162.1 12h14.1v62.4h32.9v12.7h-47V12z" fill="#004b93"/>
+                    <path d="M216.5 12h14.1v75.1h-14.1V12z" fill="#004b93"/>
+                    <path d="M239.1 71.4l12.7-5c3.6 6.8 10.3 11.5 20.3 11.5 8.9 0 13.9-4 13.9-9.5 0-6.1-5.2-8.5-16.8-11-15.1-3.3-25.4-8.3-25.4-22.3 0-12.7 10.7-22 26.2-22 13.3 0 22.6 5.8 27.2 14.8l-11.7 5.9c-3.1-6.1-8.5-8.6-15.5-8.6-7.9 0-12.2 3.8-12.2 8.7 0 5.4 4.5 7.4 15.7 9.8 16.5 3.5 26.5 8.9 26.5 22.9 0 14.1-11 23.3-28.4 23.3-16 0-26.4-7.8-30.6-17.5z" fill="#004b93"/>
+                    <path d="M305 12h13.3l29.4 75.1h-14.9l-6.8-18.2h-29.4l-6.8 18.2h-14.4L305 12zm16.5 44.5l-10.1-27.4-10.1 27.4h20.2z" fill="#004b93"/>
+                    <path d="M352 12h13.9l32.5 50.1V12h13.9v75.1h-12.7L366 35v52.1H352V12z" fill="#004b93"/>
+                </svg>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Ana Sayfa</a></li>
@@ -28,24 +37,42 @@
         </nav>
     </header>
 
-    <!-- 3. HERO / BAŞLIK ALANI -->
     <section class="hero">
-        <h1>Geleceği Renklendiriyoruz</h1>
-        <p>Polisan Holding kurumsal web sitesine hoş geldiniz.</p>
+        <h1>Geleceği Güvenle Boyuyoruz</h1>
+        <p>Polisan Holding olarak kimya, boya, liman işletmeciliği ve gayrimenkul alanlarında köklü geçmişimizle değer üretmeye devam ediyoruz.</p>
     </section>
 
-    <!-- 4. ANA İÇERİK ALANI -->
     <main>
-        <h2>Polisan Hakkında Kısa Bilgi</h2>
-        <p>Buraya Polisan Holding'in sektörleri ve kimya/boya alanındaki faaliyetleri hakkında yazılar gelecek.</p>
+        <div class="sayac-paneli">
+            <div class="sayac-kart">
+                <h3>1956</h3>
+                <p>Kuruluş Yılı</p>
+            </div>
+            <div class="sayac-kart">
+                <h3>50+</h3>
+                <p>Ülkeye İhracat</p>
+            </div>
+            <div class="sayac-kart">
+                <h3>1.500+</h3>
+                <p>Uzman Personel</p>
+            </div>
+            <div class="sayac-kart">
+                <h3>4</h3>
+                <p>Ana Sektör</p>
+            </div>
+        </div>
+
+        <div class="Icerik-kutusu">
+            <h2>Polisan Holding'e Hoş Geldiniz</h2>
+            <p>1956 yılında temelleri atılan Polisan, Türkiye'nin lider sanayi kuruluşlarından biri olarak faaliyet göstermektedir. İnovasyon, yüksek teknoloji ve çevreye duyarlılık ilkelerini bir araya getirerek, küresel standartlarda ürün ve hizmetler sunuyoruz.</p>
+            <br>
+            <p>Kimya sektöründeki öncülüğümüzü boya sanayindeki lider markamızla birleştiriyor, bölgenin en büyük liman tesislerinden biri olan Poliport ile lojistik alanında Türkiye ekonomisine büyük bir katma değer sağlıyoruz.</p>
+        </div>
     </main>
 
-    <!-- 5. FOOTER ALANI -->
     <footer>
-        <p>&copy; 2026 Polisan Holding. Tüm hakları saklıdır.</p>
+        <p>&copy; 2026 Polisan Holding. Tüm hakları saklıdır. | Ödev Teslimi: Hacer Naz İlter - 221120251074</p>
     </footer>
 
-    <!-- JavaScript dosyamızı buraya bağlıyoruz -->
-    <script src="js/script.js"></script>
 </body>
 </html>
